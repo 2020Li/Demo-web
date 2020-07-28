@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="bagevent_test@localhost">
+  <database-model serializer="dbm" dbms="UNKNOWN" family-id="UNKNOWN" format-version="4.15">
+    <root id="1">
+      <ServerVersion>0.0</ServerVersion>
+      <DefaultCasing>lower/lower</DefaultCasing>
+    </root>
+    <database id="2" parent="1" name="bagevent_test">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </database>
+    <database id="3" parent="1" name="crm"/>
+    <database id="4" parent="1" name="information_schema"/>
+    <database id="5" parent="1" name="mms"/>
+    <database id="6" parent="1" name="mysql"/>
+    <database id="7" parent="1" name="njxzc"/>
+    <database id="8" parent="1" name="ssm"/>
+    <database id="9" parent="1" name="test"/>
+    <schema id="10" parent="2">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <table id="11" parent="10" name="userloginlog"/>
+    <table id="12" parent="10" name="users"/>
+    <column id="13" parent="11" name="login_id">
+      <Position>1</Position>
+      <DataType>INT(10)|4s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="14" parent="11" name="user_id">
+      <Position>2</Position>
+      <DataType>INT(10)|4s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="15" parent="11" name="login_time">
+      <Position>3</Position>
+      <DataType>DATE(10)|91s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="16" parent="11" name="login_ip">
+      <Position>4</Position>
+      <DataType>VARCHAR(64)|12s</DataType>
+    </column>
+    <index id="17" parent="11" name="PRIMARY">
+      <ColNames>login_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="18" parent="11" name="PRIMARY">
+      <ColNames>login_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="19" parent="12" name="user_id">
+      <Position>1</Position>
+      <DataType>INT(10)|4s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="20" parent="12" name="user_name">
+      <Position>2</Position>
+      <DataType>VARCHAR(20)|12s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="21" parent="12" name="email">
+      <Position>3</Position>
+      <DataType>VARCHAR(64)|12s</DataType>
+    </column>
+    <column id="22" parent="12" name="cellphone">
+      <Position>4</Position>
+      <DataType>VARCHAR(20)|12s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="23" parent="12" name="password">
+      <Position>5</Position>
+      <DataType>VARCHAR(20)|12s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="24" parent="12" name="salt">
+      <Position>6</Position>
+      <DataType>VARCHAR(20)|12s</DataType>
+    </column>
+    <column id="25" parent="12" name="state">
+      <Position>7</Position>
+      <DataType>INT(10)|4s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="26" parent="12" name="create_time">
+      <Position>8</Position>
+      <DataType>DATE(10)|91s</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <index id="27" parent="12" name="PRIMARY">
+      <ColNames>user_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="28" parent="12" name="PRIMARY">
+      <ColNames>user_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
